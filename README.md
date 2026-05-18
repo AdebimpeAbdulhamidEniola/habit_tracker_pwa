@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Habit Tracker — Stage 3 PWA Challenge
+
+Build a mobile-first Habit Tracker Progressive Web App with local authentication, streak tracking, and full offline support.
+
+---
+
+## The Challenge
+
+This is a **Stage 3 implementation challenge**. There is no Figma file — you make the design decisions. The spec defines behavior and test contracts; you decide the visual design and UX polish.
+
+### What You're Building
+
+A habit tracking app where users can:
+
+- Sign up and log in with email and password (local auth, no backend)
+- Create, edit, and delete personal habits
+- Mark habits complete each day and track streaks
+- Reload the app and find everything exactly as they left it
+- Install the app to their home screen and use it offline
+
+---
+
+## Project Structure
+
+```
+habit-tracker/
+├── spec/
+│   ├── product-definition.md       # What, who, why
+│   ├── core-requirements.md        # 12 core + 6 stretch features
+│   ├── design-challenges.md        # 3 UX areas you design yourself
+│   ├── technical-requirements.md   # Stack, routes, storage, tests
+│   └── differentiators.md          # 5 optional enhancements — pick 1–2
+├── guidance/
+│   ├── brand-kit.md                # Colors, typography, spacing
+│   ├── patterns.md                 # UI/UX dos and don'ts
+│   └── accessibility.md            # WCAG 2.1 AA checklist
+├── AGENTS.md                       # AI collaboration context
+├── CLAUDE.md                       # Points to AGENTS.md
+├── README-template.md              # Template for your solution README
+└── README.md                       # This file
+```
+
+---
 
 ## Getting Started
 
-First, run the development server:
+1. **Read the spec** — Start with `spec/product-definition.md`, then `spec/core-requirements.md`. Know what you're building before writing code.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. **Review the brand kit** — `guidance/brand-kit.md` gives you colors, typography, and spacing tokens. Use them as your design foundation.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. **Check the patterns** — `guidance/patterns.md` has concrete dos and don'ts for the key UI moments in this app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+4. **Load AI context** — `AGENTS.md` gives AI tools like Claude full project context. Load it at the start of every AI session.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+5. **Pick your differentiators** — Read `spec/differentiators.md` and pick 1–2 that match your strengths. They're what make this submission yours.
 
-## Learn More
+6. **Build in layers** — Types → utilities → components → pages → tests. Don't skip the test layer.
 
-To learn more about Next.js, take a look at the following resources:
+7. **Document as you go** — Use `README-template.md` for your solution README.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Working with AI
 
-## Deploy on Vercel
+`AGENTS.md` and `CLAUDE.md` give AI tools full project context — stack, contracts, non-negotiables. Load them at the start of each session.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Lean on AI for implementation, but the design decisions are yours. The three design challenges in `spec/design-challenges.md` are where your product thinking matters most. Review all generated code — shallow or misleading tests will count against your submission.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## Your Solution
+
+Your public repo should contain:
+
+- Your application code
+- Your completed README (rename `README-template.md` → `README.md`)
+- Your test suite passing with ≥ 80% line coverage on `src/lib`
+
+The `spec/`, `guidance/`, `AGENTS.md`, `CLAUDE.md`, and `README-template.md` files are gitignored — they're your development reference, not part of the finished product.
+
+---
+
+## Questions?
+
+Refer to the spec files in this repo. If anything is ambiguous, the `spec/technical-requirements.md` is the source of truth.
