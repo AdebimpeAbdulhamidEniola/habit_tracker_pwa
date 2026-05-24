@@ -14,6 +14,8 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${inter.className} h-full antialiased`}>
+      <link rel="manifest" href="/manifest.json" />
+      <meta name="theme-color" content="#6366f1" />
       <body className="min-h-full flex flex-col">
         {children}
       </body>
